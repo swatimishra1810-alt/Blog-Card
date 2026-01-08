@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 80vw;
+    padding: 2rem 1rem;
+    background-color:azure;
+    margin: 0 auto;
+    
+}
+.header_container{
+    margin-bottom: 2.8rem;
+}
+.header_title{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    line-height:2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.header_desc{
+   max-width: 768px;
+   text-align: center;
+   color:rgb(105,99,99) ; 
+   margin: 0 auto;
+   
+}
+.main_container
+{
+    display: grid;
+    gap: 1.5rem;
+    /* grid-template-columns: repeat(1,1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(200px , 250px));
+    justify-content: center;
+} 
+
+/* @media(min-width:769px)
+{
+    .main_container{
+         grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(min-width:1128px)
+{
+    .main_container{
+         grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(min-width:1440px)
+{
+    .main_container{
+         grid-template-columns: repeat(4,1fr);
+    }
+} */
+.card_container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid rgb(111,109,109);
+    overflow: hidden;
+
+}
+.card_img_container{
+    position:relative;
+    overflow:hidden ;
+    height: 14rem;
+}
+.card_img{
+   object-fit: cover;
+   object-position: center;
+   position:absolute;
+   height: 100%;
+   width: 100%;
+
+}
+.card_title{
+   display: flex; 
+   flex-direction: column;
+   padding: 1.5rem;
+}
+.card_container:hover .card_img{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+.card_title_heading{
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+.card_a:hover .card_title_heading{
+color:brown;
+}
+.card_title_desc{
+    color: black;
+    font-size: 0.8rem;
+}
+.card_footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+.author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem ;
+}
+.author_avtar{
+   height: 2.5rem;
+   width: 2.5rem;
+   overflow: hidden;
+   border: 1px solid black;
+   border-radius: 50%; 
+   background-color: #453939;
+}
+.author_info{
+    display: flex;
+    flex-direction: column;
+}
+.author_name{
+    color: blue;
+}
+.author_date{
+    color: #453939;
+}
+.card_tag{
+  font-size: 1rem;
+  border: 1px solid black;
+  border-radius: 2px;
+  line-height: 1.3rem;  
+  padding: 0.75rem 0.5rem;
+  color: gray;
+}
+
